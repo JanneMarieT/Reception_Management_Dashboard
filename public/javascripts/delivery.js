@@ -65,7 +65,7 @@ function addDelivery() {
 
 };
 
-addDelivery();
+//addDelivery();
 
 
 
