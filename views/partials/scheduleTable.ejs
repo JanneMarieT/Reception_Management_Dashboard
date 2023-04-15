@@ -1,0 +1,50 @@
+ <!-----schedule_table----->
+ <section>
+    <div class="col mb-6">
+        <div class="container-fluid">
+            <h2>Schedule Delivery</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="table table-responsive">
+                        <table class="table table-bordered table-hover m-0" id="schedule_table">
+                            <thead>
+                                <tr>
+                                    <th>Vehicle:</th>
+                                    <th>Name:</th>
+                                    <th>Surname:</th>
+                                    <th>Telephone:</th>
+                                    <th>Address:</th>
+                                    <th>Return time:</th>
+                                </tr>
+                            </thead>
+                            <tbody id="deliver" class="de_liv">
+                                <tr name="deli">
+                                    <td> <select name="icon" class="form-control">
+                                            <option value="<i class='bi bi-car-front-fill'></i>">Car</option>
+                                            <option value="<i class='fa-solid fa-motorcycle'></i>">Motorcycle
+                                            </option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" name="name" placeholder="Name" id="name_deliver"
+                                            class="form-control" required>
+                                    </td>
+                                    <td><input type="text" name="surname" placeholder="Surname" id="surname_deliver"
+                                            class="form-control" required></td>
+                                    <td><input type="number" name="number" placeholder="12345678"
+                                            id="number_deliver" class="form-control" min="8" required>
+                                    </td>
+                                    <td><input type="text" name="adresse" placeholder="Address" id="adresse_deliver"
+                                            class="form-control" required></td>
+                                    <td><input type="time" name="arrived" placeholder="Return time"
+                                            id="arrived_deliver" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button class="delivery_add" type="submit" value="Insert Row"><span>Add</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
