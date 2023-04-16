@@ -330,3 +330,47 @@ async function staffUserGet() {
 
 }
 staffUserGet()
+/*
+function showToast(staffMember) {
+    $('#staffToastBody').empty();
+    $('#img_here').attr('src', staffMember.picture)
+    $('#staffToastBody').append(staffMember.staffMemberIsLate());
+    $('#staffToast').toast('show');
+  }
+  
+  function staffMemberIsLate() {
+    timeNow = new Date(new Date().getTime()).toLocaleTimeString()
+  
+    if (staff_0.expectedReturnTime > timeNow || staff_1.expectedReturnTime > timeNow || staff_2.expectedReturnTime > timeNow || staff_3.expectedReturnTime > timeNow || staff_4.expectedReturnTime > timeNow) {
+      setTimeout(staffMemberIsLate, 1000);
+    } else {
+      switch (true) {
+        case (staff_0.expectedReturnTime == timeNow):
+          showToast(staff_0);
+          break;
+        case (staff_1.expectedReturnTime == timeNow):
+          showToast(staff_1);
+          break;
+        case (staff_2.expectedReturnTime == timeNow):
+          showToast(staff_2);
+          break;
+        case (staff_3.expectedReturnTime == timeNow):
+          showToast(staff_3);
+          break;
+        case (staff_4.expectedReturnTime == timeNow):
+          showToast(staff_4);
+          break;
+        default:
+          clearTimeout();
+      }
+    }
+  }
+  
+  function staffOut() {
+    $(document).on('click', '.staff-out-btn', function () {
+      // Code for staff out functionality
+      staffMemberIsLate();
+    })
+  }
+  
+  staffOut();*/

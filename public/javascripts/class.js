@@ -40,6 +40,7 @@ class Delivery_driver extends Employee {
 
     constructor(name, surname, vehicle, telephone, deliverAddress, returnTime) {
         super(name, surname);
+        this.id = Date.now(); //generate a unique ID for the driver
         this.vehicle = vehicle;
         this.telephone = telephone;
         this.deliverAddress = deliverAddress;

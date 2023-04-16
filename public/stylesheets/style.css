@@ -23,11 +23,11 @@ h1 {
 
 /* ------------Table ------------*/
 .row {
-    text-align: center;
+    text-align: center !important;
     position: relative;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     cursor: pointer;
     border-width: thin;
 }
@@ -38,6 +38,8 @@ h1 {
     border: 1px #212529;
     border-width: thin;
     overflow: hidden;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 thead {

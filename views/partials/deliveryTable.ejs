@@ -1,11 +1,10 @@
  <!-----schedule_table----->
  <section>
     <div class="col mb-6">
-        <div class="container-fluid">
             <h2>Schedule Delivery</h2>
             <div class="row">
                 <div class="col">
-                    <div class="table table-responsive">
+                    <div class="table table-responsive-md">
                         <table class="table table-bordered table-hover m-0" id="schedule_table">
                             <thead>
                                 <tr>
@@ -45,7 +44,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
     </div>
 </section>
        <!----- Delivery Board ----->
@@ -55,7 +54,7 @@
             <h2>Delivery Board</h2>
             <div class="row">
                 <div class="col">
-                    <div class="table table-responsive">
+                    <div class="table table-responsive-md">
                         <table class="table table-bordered table-hover m-0" id="driver_table">
                             <thead>
                                 <tr>
@@ -70,7 +69,7 @@
                             <tbody>
                             </tbody>
                         </table>
-                        <button class="delivery_clear" type="button"><span>Clear </span></button>
+                        <button onclick="deliveryClear()" class="delivery_clear" type="button"><span>Clear </span></button>
                     </div>
                 </div>
             </div>
@@ -82,8 +81,7 @@
         <div class="toast" id="deliverToast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
             <div class="toast-header">
                 <strong>Delivery Driver is late!</strong>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
-                    aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body" id="deliverToastBody">
             </div>
